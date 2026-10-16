@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemesanan</title>
+  </head>
+
+  <body>
+    <h1 align="center">Formulir Pemesanan Barang</h1>
+
+    <nav align="center">
+      <a href="#">Home</a> | <a href="#">Generate Link</a> |
+      <a href="#">Transaction History</a> | <a href="#">Policy</a> |
+      <a href="#">Logout</a>
+    </nav>
+
+    <hr />
+
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="photo">
+          <img
+            src="../praktikum1/assets/WhatsApp Image 2026-10-07 at 19.04.25.jpeg"
+            alt="Raja"
+            width="200"
+          />
+          <br />
+          <button type="button">Upload Foto</button>
+        </div>
+
+        <fieldset>
+          <legend>Formulir Pemesanan</legend>
+
+          <form action="prak2_kelompok_8_desainuiux_hasilweb.html" method="get">
+            <label for="title">Title Here:</label>
+            <input type="text" name="title" id="title" />
+
+            <br /><br />
+
+            <label for="deskripsi">Deskripsi:</label>
+            <textarea
+              name="deskripsi"
+              id="deskripsi"
+              rows="4"
+              cols="30"
+            ></textarea>
+
+            <br /><br />
+
+            <label for="accountNumber">Account Number:</label>
+            <input type="tel" name="accountNumber" id="accountNumber" />
+
+            <br /><br />
+
+            <label for="bank">Bank:</label>
+            <select name="bank" id="bank">
+              <option value="" selected disabled>-- Pilih Bank --</option>
+              <option value="BCA">BCA</option>
+              <option value="BTN">BTN</option>
+              <option value="Mandiri">Mandiri</option>
+              <option value="BSI">BSI</option>
+            </select>
+
+            <br /><br />
+
+            <label for="holder">Account Holder:</label>
+            <input type="text" name="holder" id="holder" />
+
+            <br /><br />
+
+            <label for="transaction">Transaction:</label>
+            <input
+              type="number"
+              name="transaction"
+              id="transaction"
+              min="1"
+              max="3"
+            />
+
+            <br />
+
+            <small>
+              * If the transaction is for 3 persons, choose 3 from the list.
+            </small>
+
+            <br /><br />
+
+            <input type="checkbox" name="mobile" id="mobile" value="Yes" />
+            <label for="mobile">Send to Mobile Phone</label>
+
+            <br />
+
+            <input
+              type="checkbox"
+              name="sendEmail"
+              id="sendEmail"
+              value="Yes"
+            />
+            <label for="sendEmail">Send to Email</label>
+
+            <br /><br />
+
+            <label for="numberPhone">Send to Mobile Phone:</label>
+            <input type="tel" name="numberPhone" id="numberPhone" />
+
+            <br /><br />
+
+            <label for="emailSend">Send to Email:</label>
+            <input type="email" name="email" id="emailSend" />
+
+            <br /><br />
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </form>
+        </fieldset>
+      </div>
+    </div>
+  </body>
+</html>
