@@ -47,7 +47,7 @@
         return harga - (harga * persen) / 100;
       }
 
-      for (let i = 0; i <= 3; i++) {
+      for (let i = 1; i <= 3; i++) {
         const harga = i * 10000;
         const bayar = hitungDiskon(harga, 10);
         console.log(`Barang ${i} harga ${harga} Bayar ${bayar}`);
